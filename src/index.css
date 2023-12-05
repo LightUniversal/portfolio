@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-slate-900 text-white
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.bar {
+  display: none;
+}
+@media (max-width : 840px ) {
+  .body {
+    width: 90%;
+    margin-top: 12px;
+  }
+  .profileimage {
+    width: 260px;
+  }
+  .links {
+    display: none;
+  }
+  .bar {
+    display: block;
+  }
+  .stacks {
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+  }
+  .body .info {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  .about {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+  }
+  .about img {
+    width: 220px !important;
+  }
+  .about .description {
+    flex-wrap: wrap;
+  }
+  .portfolio {
+    width: 90%;
+
+  }
+  .portfolio .projects {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .projects .image {
+    width: 100%;
+    gap: 6px;
+  }
+}
+@media (max-width : 582px ) {
+  .body {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .profileimage {
+    width: 260px;
+  }
+}
