@@ -1,28 +1,28 @@
 import React from "react";
-import { FaBars } from "react-icons/fa";
+import { FaAddressBook, FaBars, FaFile, FaHome, FaServicestack, FaUserAlt } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="shadow-sm p-2 px-7 relative border-b border-slate-800">
+    <header className=" p-2 px-7 relative  shadow-slate-800 shadow-sm">
       <nav className="  h-16 flex justify-between items-center">
         <hgroup>
           <h2 className=" font-bold text-2xl">Lu.dev</h2>
         </hgroup> 
         <ul className="links flex justify-between gap-8 font-bold text-white">
           <li>
-            <a href="#">Home </a>
+            <a href="#" className="flex items-center">Home <FaHome className="mx-2 text-green-600" /></a>
           </li>
           <li>
-            <a href="#">About </a>
+            <a href="#" className="flex items-center">About <FaUserAlt className="mx-2 text-green-600" /></a>
           </li>
           <li>
-            <a href="#">Projects </a>
+            <a href="#" className="flex items-center">Projects <FaFile className="mx-2 text-green-600"/></a>
           </li>
           <li>
-            <a href="#">Services </a>
+            <a href="#" className="flex items-center">Services <FaServicestack className="mx-2 text-green-600" /></a>
           </li>
           <li>
-            <a href="#">Contact </a>
+            <a href="#" className="flex items-center">Contact <FaAddressBook className="mx-2 text-green-600" /></a>
           </li>
         </ul>
       </nav>

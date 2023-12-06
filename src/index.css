@@ -87,4 +87,7 @@ code {
   .profileimage {
     width: 260px;
   }
+  .project {
+    flex-wrap: wrap;
+  }
 }
